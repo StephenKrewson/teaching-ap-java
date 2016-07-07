@@ -20,5 +20,7 @@ public class AskingQuestions
 		myDouble = keyboard.nextDouble();
 
 		System.out.println( "Int = " + myInt + " String = " + myString + " Double = " + myDouble );
+
+		System.out.println( Math.pow(myInt, 0.5) + "\n" + Math.sqrt(myInt) );
 	}
 }
