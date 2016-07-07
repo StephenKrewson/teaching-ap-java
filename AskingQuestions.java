@@ -6,19 +6,19 @@ public class AskingQuestions
 	{
 		Scanner keyboard = new Scanner(System.in);
 
-		int age;
-		String height;
-		double weight;
+		int myInt;
+		String myString;
+		double myDouble;
 
-		System.out.print( "How old are you? " );
-		age = keyboard.nextInt();
+		System.out.print( "Please enter an int: " );
+		myInt = keyboard.nextInt();
 
-		System.out.print( "How tall are you? " );
-		height = keyboard.next();
+		System.out.print( "Please enter anything (interpreted as string): " );
+		myString = keyboard.next();
 
-		System.out.print( "How much do you weigh? " );
-		weight = keyboard.nextDouble();
+		System.out.print( "Please enter a double: " );
+		myDouble = keyboard.nextDouble();
 
-		System.out.println( "So you're " + age + " old, " + height + " tall and " + weight + " heavy." );
+		System.out.println( "Int = " + myInt + " String = " + myString + " Double = " + myDouble );
 	}
 }
