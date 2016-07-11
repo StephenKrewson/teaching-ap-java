@@ -43,5 +43,8 @@ public class TestPrint
 			System.out.println(myArray[i]);
 		}
 
+		// Division by 0
+		System.out.println("5 / 0 = " + (5 / 0));
+
 	}
 }
