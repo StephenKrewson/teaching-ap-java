@@ -22,5 +22,22 @@ public class AskingQuestions
 		System.out.println( "Int = " + myInt + " String = " + myString + " Double = " + myDouble );
 
 		System.out.println( Math.pow(myInt, 0.5) + "\n" + Math.sqrt(myInt) );
+
+		// Start of CS50 mario game
+		System.out.print("How high should your Mario mountain be? ");
+		int mario = keyboard.nextInt();
+
+		for (int i = 1; i <= mario; i++) {
+
+			for (int j = 0; j < (mario - i); j++) {
+				System.out.print(" ");
+			}
+
+			for (int k = 0; k < i; k++) {
+				System.out.print("#");
+			}
+
+			System.out.println();
+		}
 	}
 }

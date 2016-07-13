@@ -34,15 +34,18 @@ public class TestPrint
 		System.out.println(Arrays.toString(bigArray));
 
 		// "for each" loop
+		System.out.println("Loop 1");
 		for (int elem : myArray) {
 			System.out.println(elem);
 		}
 		
 		// "for" loop
+		System.out.println("Loop 1");
 		for (int i = 0; i < myArray.length; i++) {
 			System.out.println(myArray[i]);
 		}
 
+		
 		// Division by 0
 		System.out.println("5 / 0 = " + (5 / 0));
 
