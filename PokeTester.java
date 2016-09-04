@@ -1,4 +1,5 @@
-public class PokeTester extends Pokemon {
+public class PokeTester
+{
 
 	// Access | Specifier | Return type | Name
 	public static void main(String[] args) {
@@ -10,7 +11,11 @@ public class PokeTester extends Pokemon {
 		// What are we trying to do here??
 		// create obj with default constructor
 		Pokemon x = new Pokemon();
-		
+
+		Pokemon z = new PokeSub();
+
+		System.out.println(z);
+
 		// Now we can do stuff with x
 		// this just gives the memory address...
 		System.out.println(x);
