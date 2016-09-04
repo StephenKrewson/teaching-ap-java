@@ -5,6 +5,8 @@ public class PokeSub extends Pokemon
 	public PokeSub()
 	{
 		super();
+		
+		// New feature just of the subclass
 		color = "Aquamarine";
 	}
 }

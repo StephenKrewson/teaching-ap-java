@@ -12,6 +12,7 @@ public class PokeTester
 		// create obj with default constructor
 		Pokemon x = new Pokemon();
 
+		// It's still a Pokemon !
 		Pokemon z = new PokeSub();
 
 		System.out.println(z);

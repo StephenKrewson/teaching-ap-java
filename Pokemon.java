@@ -8,7 +8,12 @@ public class Pokemon {
 	
 	// Constant, default values
 	public static final int YEAR_CREATED = 2016;
-	
+
+	// TODO: create some limits for CP
+	// then we will make a static method for checking in the subclass
+	// which we call as Pokemon.isValidCP()
+	// we will also make changeCP polymorphic
+
 	// Create the obj with a CONSTRUCTOR
 	public Pokemon() {
 		
