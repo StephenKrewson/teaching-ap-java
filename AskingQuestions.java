@@ -4,40 +4,39 @@ public class AskingQuestions
 {
 	public static void main( String[] args )
 	{
-		Scanner keyboard = new Scanner(System.in);
+		Scanner console = new Scanner(System.in);
 
-		int myInt;
-		String myString;
-		double myDouble;
+		// for the test, don't need to define this since it's a given
+		final int NUM_ENTRIES = 5;
+		final int MIN_GOOD = 0;
+		final int MAX_GOOD = 100;
 
-		System.out.print( "Please enter an int: " );
-		myInt = keyboard.nextInt();
+		// NOTE: from here is the actual stuff we will need for exam
+		int goodEntries = 0;
+		double sumGood = 0;
+		double sumAll = 0;
+		
 
-		System.out.print( "Please enter anything (interpreted as string): " );
-		myString = keyboard.next();
+		for (int i = 0; i < NUM_ENTRIES; i++) {
 
-		System.out.print( "Please enter a double: " );
-		myDouble = keyboard.nextDouble();
+			System.out.print("Please enter a double: ");
+			double val = console.nextDouble();
 
-		System.out.println( "Int = " + myInt + " String = " + myString + " Double = " + myDouble );
-
-		System.out.println( Math.pow(myInt, 0.5) + "\n" + Math.sqrt(myInt) );
-
-		// Start of CS50 mario game
-		System.out.print("How high should your Mario mountain be? ");
-		int mario = keyboard.nextInt();
-
-		for (int i = 1; i <= mario; i++) {
-
-			for (int j = 0; j < (mario - i); j++) {
-				System.out.print(" ");
+			if (val <= MAX_GOOD && val >= MIN_GOOD) {
+				// this is a good one!
+				goodEntries++;
+				sumGood = sumGood + val;
 			}
-
-			for (int k = 0; k < i; k++) {
-				System.out.print("#");
-			}
-
-			System.out.println();
+			
+			sumAll = sumAll + val;
 		}
+
+		double averageAll = sumAll / NUM_ENTRIES; 
+
+		System.out.println("Total sum: " + sumAll);
+		System.out.println("Average of all entries: " + averageAll);
+		System.out.println("Number of GOOD entries: " + goodEntries);
+		System.out.println("Sum of GOOD entries: " + sumGood);
+
 	}
 }
